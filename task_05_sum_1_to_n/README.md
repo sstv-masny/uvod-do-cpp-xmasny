@@ -10,3 +10,17 @@ in: 0      out: 0
 in: 5      out: 15
 in: 10     out: 55
 ```
+
+---
+
+# Úloha 05 — Súčet 1..N
+
+**Vstup:** Celé číslo `n` so `n >= 0`.  
+**Výstup:** Súčet celých čísel od 1 do `n`. Pre `n=0` vypíšte `0`.
+
+### Príklady
+```
+vstup: 0      výstup: 0
+vstup: 5      výstup: 15
+vstup: 10     výstup: 55
+```
