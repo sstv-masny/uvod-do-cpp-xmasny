@@ -7,11 +7,11 @@ Tento repozitár obsahuje viacero samostatných C++ cvičení/projektov usporiad
 ## How the repo is organized / Ako je repozitár usporiadaný
 
 - Each top-level folder contains one independent C++ task or example.
-- Look inside a folder to find source files (e.g. `main.cpp`), a `CMakeLists.txt`, or a `Makefile`.
+- Look inside a folder to find source files (e.g. `main.cpp`)
 - If a folder already contains its own README, follow the instructions inside that folder.
 
 - Každý vrchný priečinok obsahuje jedno samostatné C++ zadanie alebo príklad.
-- Pozrite sa do priečinka, kde nájdete zdrojové súbory (napr. `main.cpp`), `CMakeLists.txt` alebo `Makefile`.
+- Pozrite sa do priečinka, kde nájdete zdrojové súbory (napr. `main.cpp`)
 - Ak priečinok už obsahuje vlastný README, riaďte sa pokynmi v ňom.
 
 ## Common ways to build & run a single folder / Bežné spôsoby zostavenia a spustenia jedného priečinka
@@ -31,30 +31,6 @@ g++ -std=c++17 -O2 -Wall -Wextra main.cpp -o main
 # or compile all .cpp files in that folder
 g++ -std=c++17 -O2 -Wall -Wextra *.cpp -o app
 ./app
-```
-
-2) CMake-based projects (recommended if `CMakeLists.txt` exists) / Projekty s CMake (odporúčané, ak existuje `CMakeLists.txt`)
-
-```bash
-cd folder_name
-mkdir -p build
-cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-cmake --build . --config Release
-# run the produced binary (name depends on CMake target)
-./my_executable
-```
-
-On Windows with Visual Studio: open the generated .sln or use "Open Folder" → configure CMake in VS.
-
-Na Windows s Visual Studio: otvorte vygenerovaný .sln alebo použite "Open Folder" → nakonfigurujte CMake vo VS.
-
-3) Makefile-based projects / Projekty s Makefile
-
-```bash
-cd folder_name
-make
-./app   # or whichever binary the Makefile builds
 ```
 
 4) Visual Studio Code
@@ -78,11 +54,3 @@ make
 - Žiadny `main.cpp` / vstuponý bod: otvorte priečinok a nájdite zdrojový súbor obsahujúci `int main()`.
 - Chýbajúce závislosti alebo hlavičky: skontrolujte README priečinka alebo poskytnuté pokyny; nainštalujte potrebné knižnice.
 - Chyby kompilácie: zapnite podrobnejší výstup (odstráňte -O2 / pridajte -g) a opravte varovania/chyby hlásené kompilátorom.
-
-## Tips for maintainers / Tipy pre správcov
-
-- Consider adding a README inside each folder with exact build/run commands for that task.
-- Add simple Makefiles or CMakeLists.txt where possible so users can build consistently.
-
-- Zvážte pridanie README do každého priečinka s presnými príkazmi na zostavenie/spustenie pre dané zadanie.
-- Pridajte jednoduché Makefile alebo CMakeLists.txt kde je to možné, aby používatelia mohli zostavovať konzistentne.
