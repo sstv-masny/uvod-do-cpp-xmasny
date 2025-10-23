@@ -20,3 +20,27 @@ in:
 out:
 1
 ```
+
+---
+
+# Úloha 10 — Binárne vyhľadávanie (prvý index)
+
+**Vstup:**
+- Celé číslo `n` (`n >= 1`)
+- `n` usporiadaných celých čísel (ne-decreasing)
+- Cieľové číslo `x`
+
+**Výstup:** Nultou‑indexovaná pozícia prvej výskytu `x`, alebo `-1` ak sa nenájde.
+
+**Obmedzenie:** Implementujte binárne vyhľadávanie ručne (nepoužívajte `std::binary_search`).
+
+### Príklad
+```
+vstup:
+5
+1 2 2 2 10
+2
+
+výstup:
+1
+```
